@@ -5,5 +5,9 @@
 <div id="restaurants">
   <% @restaurants.each do |restaurant| %>
     <%= render restaurant %>
+    <p>
+      <%= link_to "Show this restaurant", restaurant %>
+    </p>
+    <hr>
   <% end %>
 </div>
