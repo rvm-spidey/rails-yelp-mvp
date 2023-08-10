@@ -1,6 +1,9 @@
-<h1>New review</h1>
-
-<%= render 'form', restaurant: @restaurant, review: @review %>
+<h1>new </h1>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.input :rating%>
+  <%= f.submit "Add a review"%>
+<% end %>
 
 <!--
 <%= simple_form_for [@restaurant, @review] do |f| %>
